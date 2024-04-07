@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #424242;
+
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  color: #FFF;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+  margin: 64px 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+h2 > span {
+  color: #FFB74D;
+}
+
+.list-container {
+  width: 1088px;
+  margin: 0 auto;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(3, auto);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #EEEEEE;
+}
+
+.card > img {
+  width: 320px;
+  height: 320px;
+}
+
+.card > code {
+  width: 100%;
+  text-align: center;
+  padding: 8px 0;
+  border: 1px solid #B39DDB;
+  background-color: #7E57C2;
+  color: #FFF;
+  font-size: 18px;
+}
+
+.none-clip-path {
+  clip-path: none;
+}
+
+.circle-clip-path {
+  clip-path: circle(50%);
+}
+
+.ellipse-clip-path {
+  clip-path: ellipse(25% 40%);
+}
+
+.inset-clip-path {
+  clip-path: inset(10% 10% 10% 10%);
+}
+
+.polygon-triangle-clip-path {
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+}
+
+.polygon-pentagon-clip-path {
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
