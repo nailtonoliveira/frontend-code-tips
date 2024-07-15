@@ -1,4 +1,6 @@
 /**
+ * by Nailton R.
+ * 
  * Single Responsability Principle
  */
 
