@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../common/reset.css" />
+    <title>Scroll Snap</title>
+    <style>
+      h1 {
+        text-align: center;
+        margin-bottom: 32px;
+      }
+
+      #root {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      .container {
+        background-color: #e5e5e5;
+        padding: 24px;
+        border-radius: 8px;
+        display: flex;
+        overflow: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: 20px;
+        scroll-padding-right: 20px;
+        width: 100%;
+        gap: 20px;
+
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 90%;
+          scroll-snap-align: center;
+          height: 200px;
+          text-align: center;
+          color: white;
+          border-radius: 16px;
+        }
+
+        .blue {
+          background-color: #93c5fd;
+        }
+
+        .green {
+          background-color: #34d399;
+        }
+
+        .orange {
+          background-color: #fdba74;
+        }
+
+        .red {
+          background-color: #fb7185;
+        }
+
+        .purple {
+          background-color: #c084fc;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main id="root">
+      <h1>Scroll Snap</h1>
+
+      <div class="container">
+        <div class="item blue">1</div>
+        <div class="item green">2</div>
+        <div class="item orange">3</div>
+        <div class="item red">4</div>
+        <div class="item purple">5</div>
+      </div>
+    </main>
+  </body>
+</html>
